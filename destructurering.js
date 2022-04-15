@@ -25,3 +25,27 @@ console.log(first, second);
 
 const { name, age } = { name: "alu", age: 22 };
 const { name, age } = { id: 12, name: "alu", age: 22 };
+
+const employee = {
+  IDE: "vs code",
+  designation: "developer",
+  machineL: "macbook pro",
+  language: ["python", "java", "C++"],
+  specification: {
+    height: 64,
+    weight: 45,
+    addrees: "california",
+    drink: "water",
+    watch: {
+      color: "black",
+      price: 500,
+      brand: "siko",
+    },
+  },
+};
+
+const { machine, IDE } = employee;
+
+const { weight, height, addrees } = employee.specification;
+
+const { brand } = employee.specification.watch;
